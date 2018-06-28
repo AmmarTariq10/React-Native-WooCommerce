@@ -19,11 +19,11 @@ export default createOrder = (data,success,error) => {
        order: data
     }
 
-    let data = JSON.stringify(d)
+    let da = JSON.stringify(d)
     fetch(url, {
             method: 'POST',
             headers: headers,
-            body: data
+            body: da
         })
         .then(
             d => {
